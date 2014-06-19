@@ -1,0 +1,43 @@
+language.name=English
+language.region=US
+language.code=en_US
+
+
+item.dynamicHead.name=Dynamic Helmet
+item.dynamicChest.name=Dynamic Chestplate
+item.dynamicLegs.name=Dynamic Pants
+item.dynamicBoots.name=Dynamic Boots
+
+item.jungleHead.name=Jungle Head
+item.jungleChest.name=Jungle Chest
+item.jungleLegs.name=Jungle Legs
+item.jungleBoots.name=Jungle Boots
+
+item.desertHead.name=Desert Head
+item.desertChest.name=Desert Chest
+item.desertLegs.name=Desert Legs
+item.desertBoots.name=Desert Boots
+
+item.oakHead.name=Oak Head
+item.oakChest.name=Oak Chest
+item.oakLegs.name=Oak Legs
+item.oakBoots.name=Oak Boots
+
+item.stoneHead.name=Stone Head
+item.stoneChest.name=Stone Chest
+item.stoneLegs.name=Stone Legs
+item.stoneBoots.name=Stone Boots
+
+item.spruceHead.name=Spruce Head
+item.spruceChest.name=Spruce Chest
+item.spruceLegs.name=Spruce Legs
+item.spruceBoots.name=Spruce Boots
+
+item.camo.name=Camo
+item.camoJungle.name=Jungle Camo
+item.camoDesert.name=Desert Camo
+item.camoOak.name=Oak Camo
+item.camoStone.name=Stone Camo
+item.camoSpruce.name=Spruce Camo
+
+itemGroup.camoTab=Camo Suits

@@ -6,8 +6,8 @@
 /src/.DS_Store
 /src/com/.DS_Store
 /src/com/tlf/.DS_Store
-/assets/camosuits/.DS_Store
-/assets/camosuits/lang/.DS_Store
-/assets/camosuits/textures/.DS_Store
-/assets/camosuits/textures/armor/.DS_Store
-/assets/camosuits/textures/items/.DS_Store
+/src/assets/camosuits/.DS_Store
+/src/assets/camosuits/lang/.DS_Store
+/src/assets/camosuits/textures/.DS_Store
+/src/assets/camosuits/textures/armor/.DS_Store
+/src/assets/camosuits/textures/items/.DS_Store

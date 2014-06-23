@@ -4,11 +4,12 @@ import com.tlf.camosuit.common.CamoSuitMain;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -75,6 +76,17 @@ public class ItemCamo extends Item
 		for (int i = 0; i < textures.length; ++i)
 		{
 			this.icons[i] = par1IIconRegister.registerIcon(CamoSuitMain.MODID + ":" + textures[i]);
+		}
+	}
+	
+	@SideOnly(Side.CLIENT)
+	@Override
+    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
+	{
+		if (par1ItemStack.getItemDamage() == 5) {
+			par3List.add(""+EnumChatFormatting.DARK_RED+EnumChatFormatting.ITALIC+"Warning: this camo type is");
+			par3List.add(""+EnumChatFormatting.DARK_RED+EnumChatFormatting.ITALIC+"still in development, and");
+			par3List.add(""+EnumChatFormatting.DARK_RED+EnumChatFormatting.ITALIC+"thus isn't colored properly yet");
 		}
 	}
 }

@@ -1,12 +1,15 @@
 package com.tlf.camosuit.items;
 
+import java.util.List;
+
 import com.tlf.camosuit.common.CamoSuitMain;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
-
+import net.minecraft.util.EnumChatFormatting;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -53,5 +56,16 @@ public class ItemCamoArmorFixed extends ItemArmor
 	public void registerIcons(IIconRegister iconRegister)
 	{
 		this.itemIcon = iconRegister.registerIcon(CamoSuitMain.MODID + ":" + this.camoMaterial + "Camo" + this.getArmorType());
+	}
+	
+	@SideOnly(Side.CLIENT)
+	@Override
+    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
+	{
+		if (this.camoMaterial.equals("Spruce")) {
+			par3List.add(""+EnumChatFormatting.DARK_RED+EnumChatFormatting.ITALIC+"Warning: this camo type is");
+			par3List.add(""+EnumChatFormatting.DARK_RED+EnumChatFormatting.ITALIC+"still in development, and");
+			par3List.add(""+EnumChatFormatting.DARK_RED+EnumChatFormatting.ITALIC+"thus isn't colored properly yet");
+		}
 	}
 }

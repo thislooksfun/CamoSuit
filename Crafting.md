@@ -1,1 +1,6 @@
-![test](https://raw.githubusercontent.com/thislooksfun/CamoSuit/master/images/Helmet%20crafting.gif)
+![Camo item](https://raw.githubusercontent.com/thislooksfun/CamoSuit/master/images/Camo.png)
+![Assorted camos](https://raw.githubusercontent.com/thislooksfun/CamoSuit/master/images/Camo%20crafting.gif)
+![Assorted helmets](https://raw.githubusercontent.com/thislooksfun/CamoSuit/master/images/Helmet%20crafting.gif)
+![Assorted chestplates](https://raw.githubusercontent.com/thislooksfun/CamoSuit/master/images/Chestplate%20crafting.gif)
+![Assorted pants](https://raw.githubusercontent.com/thislooksfun/CamoSuit/master/images/Pants%20crafting.gif)
+![Assorted boots](https://raw.githubusercontent.com/thislooksfun/CamoSuit/master/images/Boot%20crafting.gif)

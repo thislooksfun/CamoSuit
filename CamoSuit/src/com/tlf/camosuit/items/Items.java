@@ -20,10 +20,12 @@ public class Items
 	
 	public static Item camoItem;
 	
+	/*
 	public static Item dynamicHead;
 	public static Item dynamicChest;
 	public static Item dynamicLegs;
 	public static Item dynamicBoots;
+	*/
 	
 	public static Item jungleHead;
 	public static Item jungleChest;
@@ -64,10 +66,12 @@ public class Items
 	
 	private static void initArmor()
 	{
+		/*
 		dynamicHead = new ItemCamoArmorDynamic(camo, proxy.addArmor("dynamicCamo"), 0).setUnlocalizedName("dynamicHead").setCreativeTab(camoTab);
 		dynamicChest = new ItemCamoArmorDynamic(camo, proxy.addArmor("dynamicCamo"), 1).setUnlocalizedName("dynamicChest").setCreativeTab(camoTab);
 		dynamicLegs = new ItemCamoArmorDynamic(camo, proxy.addArmor("dynamicCamo"), 2).setUnlocalizedName("dynamicLegs").setCreativeTab(camoTab);
 		dynamicBoots = new ItemCamoArmorDynamic(camo, proxy.addArmor("dynamicCamo"), 3).setUnlocalizedName("dynamicBoots").setCreativeTab(camoTab);
+		*/
 		
 		jungleHead = new ItemCamoArmorFixed(camo, proxy.addArmor("jungleCamo"), 0, "Jungle").setUnlocalizedName("jungleHead").setCreativeTab(camoTab);
 		jungleChest = new ItemCamoArmorFixed(camo, proxy.addArmor("jungleCamo"), 1, "Jungle").setUnlocalizedName("jungleChest").setCreativeTab(camoTab);
@@ -99,10 +103,12 @@ public class Items
 	{
 		System.out.println("registering items");
 		
+		/*
 		GameRegistry.registerItem(dynamicHead, "dynamicHead");
 		GameRegistry.registerItem(dynamicChest, "dynamicChest");
 		GameRegistry.registerItem(dynamicLegs, "dynamicLegs");
 		GameRegistry.registerItem(dynamicBoots, "dynamicBoots");
+		*/
 		
 		GameRegistry.registerItem(jungleHead, "jungleHead");
 		GameRegistry.registerItem(jungleChest, "jungleChest");

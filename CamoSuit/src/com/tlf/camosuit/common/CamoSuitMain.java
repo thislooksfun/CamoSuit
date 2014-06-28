@@ -8,6 +8,7 @@ import com.tlf.camosuit.items.Items;
 import com.tlf.camosuit.proxy.ServerProxy;
 
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Optional;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
@@ -51,4 +52,11 @@ public class CamoSuitMain
 	{
 		System.out.println(NAME + " " + VERSION + " loaded!");
 	}
+	
+	@Optional.Method(modid = "forgeupdater")
+	public String curseID() { return "camo-suits"; /** CurseID. Get it from curse.com/mc-mods/minecraft/[curseID]*/ }
+	@Optional.Method(modid = "forgeupdater")
+	public String[] fileFormats() { return new String[]{"Camo_Suits-$mc-$v.jar", "CamoSuit_v$v_MC_$mc.jar"}; /** $mc = minecraft version; $v = mod version */ }
+	@Optional.Method(modid = "forgeupdater")
+	public int minType() { return 2; /** 0 = alpha; 1 = beta; 2 = release */ }
 }
